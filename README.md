@@ -1,7 +1,5 @@
 # Cookie Stand Api V2
 
-## Davee's Django Rest API Template
-
 ## Author: Davee Sok
 
 ## Links & Resources
@@ -12,7 +10,7 @@
 
 ## Overview/ Motivation
 
-Starting up a Django api can be time consuming. This template is meant to get up and running fast. Once all the wiring is done, you can make modifications to your models and tests as needed.
+Create a Cookie Stand API
 
 ## Tools & Dependencies
 
@@ -22,44 +20,7 @@ Starting up a Django api can be time consuming. This template is meant to get up
 - Docker
 - psycopg2-binary
 
-## Getting Started
-
-#### 1. Click on "Use this template" and create your repo
-
-#### 2. Clone your repo and install dependencies
-
-```iterm
-cd into your repo
-poetry shell
-poetry install
-```
-
-#### 3. Create a New Secret Key by running the following command in the terminal:
-
-```iterm
-python -c 'from django.core.management.utils import get_random_secret_key; \
-            print(get_random_secret_key())'
-```
-
-#### 4. Add new key to settings.py line 23
-
-```python
-SECRET_KEY = "django-insecure-INSERT_NEW_SECRET_KEY_HERE"
-```
-
-#### 5. Replace all occurences of "Cookie_Stand" and "cookie_stand" with your new app name
-
-- rename "cookie_stand" folder to your new app name(use lower case). Example: cookie_stand -> blog
-- Do a global search of "Cookie_Stand" and replace all occurences with your app name
-  - (For this step, app name needs to be a capital word) Example: Cookie_Stand -> Blog
-  - Make sure to select "Match Case" option. [Aa]
-  - (There will only be 29 matches. If you see 44, you didn't check your case)
-- Do a global search of "cookie_stand" and replace all occurences with your app name
-  - (For this step, app name needs to be a lower cased) Example: cookie_stand -> blog
-  - Make sure to select "Match Case" option. [Aa]
-  - (There will only be 15 matches. If you see a differnt number, you didn't check your case)
-
-#### 6a. If you want to run with docker, run the following commands:
+## Commands To Know
 
 ```iterm
 docker-compose up
@@ -68,17 +29,13 @@ docker-compose run web python manage.py migrate
 docker-compose run web python manage.py createsuperuser
 ```
 
-#### 6b. If you want to run in just the terminal, run the following commands:
-
 ```iterm
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
-## Commands To Know
-
-#### Docker:
+### Docker
 
 ```python
 docker-compose -d
@@ -91,7 +48,7 @@ docker-compose restart
 docker-compose logs
 ```
 
-#### Httpie Commands through terminal:
+#### Httpie Commands through terminal
 
 ```python
 
@@ -108,7 +65,7 @@ http GET :8000/api/v1/blog/4 'Authorization: Bearer ADD_ACCESS_TOKEN_HERE'
 http DELETE :8000/api/v1/blog/3 'Authorization: Bearer ADD_ACCESS_TOKEN_HERE'
 ```
 
-#### Other:
+#### Other
 
 ```python
 poetry export -f requirements.txt -o requirements.txt --without-hashes
