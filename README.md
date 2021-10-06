@@ -1,4 +1,6 @@
-# Davee's Django Rest API Template
+# Cookie Stand Api V2
+
+## Davee's Django Rest API Template
 
 ## Author: Davee Sok
 
