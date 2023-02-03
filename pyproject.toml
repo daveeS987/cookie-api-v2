@@ -6,7 +6,7 @@ authors = ["Davee Sok <daveesok@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-Django = "^3.2.13"
+Django = "^3.2.17"
 djangorestframework = "^3.12.4"
 psycopg2-binary = "^2.9.1"
 djangorestframework-simplejwt = "^4.8.0"
